@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #5e5e5e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar h1 {
+            margin: 0;
+            font-size: 60px; /* Increase font size */
+        }
+
+        .top-bar img {
+            width: 40px; /* Adjust the width of the image */
+            margin-right: 10px; /* Add some spacing between the image and text */
+        }
+
+        .top-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .top-bar li {
+            margin-right: 20px;
+        }
+
+        .top-bar li:last-child {
+            margin-right: 0;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: #444444;
+        }
+
+        .container {
+            margin-top: 100px; /* Adjust to match the height of the top bar */
+            text-align: center;
+            padding: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #424242;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex; /* Centering images */
+            justify-content: center; /* Centering images */
+            align-items: center; /* Centering images */
+            flex-direction: column; /* Arrange items vertically */
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item img {
+            width: 75%; /* Adjusted width */
+            height: auto;
+            display: block;
+            border-bottom: 2px solid hsl(0, 0%, 100%);
+        }
+
+        .description {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .description h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        .description p {
+            margin-bottom: 0;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>
+            <img src="" alt=""> <!-- Image beside VisionCraft text -->
+            VisionCraft
+        </h1>
+        <ul>
+            <li><a href="home.html">Home</a></li> <!-- Added Home button -->
+            <li><a href="popular.html">Popular</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2 style="color:rgb(255, 255, 255);">Most Viewed</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="images/meeee.png" alt="Image 1">
+                <div class="description">
+                    <h2>Ignore</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/Design.png" alt="Image 2">
+                <div class="description">
+                    <h2>Love Over Hate</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/buddyy.png" alt="Image 3">
+                <div class="description">
+                    <h2>Lust or Love</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/1.png" alt="Image 4">
+                <div class="description">
+                    <h2>Rigged</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

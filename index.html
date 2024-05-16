@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortified</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        #login-form,
+        #signup-form {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        button {
+            display: block;
+            width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fortified</h1>
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email"><br>
+            <input type="password" id="login-password" placeholder="Password"><br>
+            <button onclick="login()">Login</button>
+        </div>
+        <script src="Login.js"></script> <!-- Include Login.js -->
+        
+        <div id="signup-form">
+            <h2>Sign Up</h2>
+            <input type="email" id="signup-email" placeholder="Email"><br>
+            <input type="password" id="signup-password" placeholder="Password"><br>
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+        <script src="signUp.js"></script> <!-- Include signUp.js -->
+    </div>
+</body>
+</html>

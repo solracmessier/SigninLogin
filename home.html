@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #5e5e5e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar h1 {
+            margin: 0;
+            font-size: 60px; /* Increase font size */
+        }
+
+        .logo {
+            width: 100px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Adjust spacing */
+        }
+
+        .top-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .top-bar li {
+            margin-right: 20px;
+        }
+
+        .top-bar li:last-child {
+            margin-right: 0;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: #444444;
+        }
+
+        .container {
+            margin-top: 70px; /* Adjust to match the height of the top bar */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #424242;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex; /* Centering images */
+            justify-content: center; /* Centering images */
+            align-items: center; /* Centering images */
+            flex-direction: column; /* Arrange items vertically */
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item img {
+            width: 70%; /* Adjusted width */
+            height: auto;
+            display: block;
+            border-bottom: 2px solid hsl(0, 0%, 100%);
+        }
+
+        .description {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .description h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        .description p {
+            margin-bottom: 0;
+            color: #ffffff;
+        }
+
+        .footer {
+            height: 60px;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #333333; /* Solid background color */
+        }
+
+        .footer a {
+            color: white;
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        .footer a:hover {
+            color: #cccccc;
+        }
+
+        .top-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .top-bar li {
+            margin-right: 20px;
+        }
+
+        .top-bar li:last-child {
+            margin-right: 0;
+        }
+
+        .top-bar a:hover {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px; /* Adjusted */
+        }
+
+        .navigation a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 8px 16px;
+            border: 2px solid #ffffff;
+            border-radius: 4px;
+            background-color: transparent;
+            margin: 0 10px; /* Adjusted */
+        }
+
+        .navigation a:hover {
+            background-color: #ffffff;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="images/SOLRAC LOGO.png" alt="Logo" class="logo">
+        <h1>VisionCraft</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="mostViewed.html">Most Viewed</a></li>
+            <li><a href="popular.html">Popular</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2 style="color:rgb(255, 255, 255);">Recommended</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="images/Untitled-1.png" alt="Image 1">
+                <div class="description">
+                    <h2>Fall to Rise</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/Untitled-1ss.png" alt="Image 2">
+                <div class="description">
+                    <h2>Wolf Pack</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/Untitled-2.png" alt="Image 3">
+                <div class="description">
+                    <h2>Serious</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/ae86.png" alt="Image 4">
+                <div class="description">
+                    <h2>AE86</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <!-- Social media links -->
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+          © 2024 Copyright:
+          <a class="text-body" href="#">Audencial.com</a>
+        </div>
+    </footer>
+</body>
+</html>

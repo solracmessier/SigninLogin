@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #5e5e5e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar h1 {
+            margin: 0;
+            font-size: 40px; /* Increase font size */
+        }
+
+        .top-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .top-bar li {
+            margin-right: 20px;
+        }
+
+        .top-bar li:last-child {
+            margin-right: 0;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: #444444;
+        }
+
+        .container {
+            margin-top: 70px; /* Adjust to match the height of the top bar */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #424242;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item {
+    background-color: #424242;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+.grid-item img {
+    width: 75%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px; /* Add margin to separate image and text */
+}
+
+.description h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.description p {
+    margin-bottom: 0;
+    color: #000000;
+}
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>VisionCraft</h1> <!-- Changed "Fortier" to "VisionCraft" and increased font size -->
+        <ul>
+            <li><a href="home.html">Home</a></li> <!-- Updated the link to home.html -->
+            <li><a href="mostViewed.html">Most Viewed</a></li>
+            <li><a href="popular.html"></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2 style="color:rgb(255, 255, 255);">Popular</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="images/Because opm 0916 high res.png" alt="Popular Image 1">
+                <div class="description">
+                    <h2>0916 BBy Because</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/clown.png" alt="Popular Image 2">
+                <div class="description">
+                    <h2>Somber</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/bird.png" alt="Popular Image 3">
+                <div class="description">
+                    <h2>Freedom - The Stud Clothing</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/Untitled-.png" alt="Popular Image 4">
+                <div class="description">
+                    <h2>Woof - The Stud Clothing</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
